@@ -1,0 +1,28 @@
+{
+	"name": "@forge/env",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": [
+			"./src/index.ts"
+		],
+		"./*": [
+			"./src/*.ts"
+		]
+	},
+	"scripts": {
+		"lint": "eslint . --max-warnings 0",
+		"check": "biome check --write",
+		"clean": "rm -rf node_modules && rm -rf dist"
+	},
+	"dependencies": {
+		"@t3-oss/env-core": "^0.11.1",
+		"zod": "^3.24.1"
+	},
+	"devDependencies": {
+		"@forge/eslint-config": "workspace:*",
+		"@forge/tsconfig": "workspace:*",
+		"@turbo/gen": "^2.3.3"
+	}
+}

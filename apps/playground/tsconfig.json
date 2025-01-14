@@ -1,0 +1,12 @@
+{
+	"extends": "@forge/tsconfig/react.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@forge/ui/*": ["../../packages/ui/src/*"]
+		}
+	},
+	"include": ["**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
+}

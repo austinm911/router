@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Default",
+	"compilerOptions": {
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+
+		"target": "ES2022",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"incremental": false,
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"lib": ["es2022", "DOM", "DOM.Iterable"],
+
+		"types": ["@cloudflare/workers-types", "@types/bun"],
+
+		"module": "Preserve",
+		"noEmit": true,
+
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true
+	}
+}

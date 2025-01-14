@@ -1,0 +1,12 @@
+{
+	"extends": "@forge/tsconfig/react-library.json",
+	"compilerOptions": {
+		//"outDir": "dist"
+		"baseUrl": ".",
+		"paths": {
+			"@forge/ui/*": ["./src/*"]
+		}
+	},
+	"include": ["."],
+	"exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,22 @@
+{
+	"name": "@forge/template",
+	"version": "0.0.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"lint": "eslint . --max-warnings 0",
+		"check": "biome check --write",
+		"clean": "rm -rf node_modules && rm -rf dist"
+	},
+	"exports": {
+		"./lib/*": "./src/lib/*.ts"
+	},
+	"dependencies": {
+		"@forge/env": "workspace:*"
+	},
+	"devDependencies": {
+		"@forge/eslint-config": "workspace:*",
+		"@forge/tsconfig": "workspace:*",
+		"@turbo/gen": "^2.3.3"
+	}
+}
